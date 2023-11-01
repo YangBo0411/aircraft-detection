@@ -10,5 +10,590 @@ The dataset can be download from [Google Drive](https://drive.google.com/file/d/
 
 · All images and their associated annotations in CORS-ADD can be used for academic purposes only, but any commercial use is prohibited.
 ## Results
+<div class="WordSection1" style="layout-grid:15.6pt">
+
+<div align="center">
+
+<table class="MsoTableGrid" border="1" cellspacing="0" cellpadding="0" style="border-collapse:collapse;border:none">
+ <tbody><tr>
+  <td width="94" style="width:70.25pt;border:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">&nbsp;</span></p>
+  </td>
+  <td width="65" valign="top" style="width:48.9pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">ATFL</span></p>
+  </td>
+  <td width="65" valign="top" style="width:48.9pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">DVC</span></p>
+  </td>
+  <td width="65" style="width:48.9pt;border:solid windowtext 1.0pt;border-left:
+  none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">Recall</span></p>
+  </td>
+  <td width="84" style="width:62.8pt;border:solid windowtext 1.0pt;border-left:
+  none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">Precision</span></p>
+  </td>
+  <td width="67" style="width:50.1pt;border:solid windowtext 1.0pt;border-left:
+  none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">mAP(%)</span></p>
+  </td>
+  <td width="95" valign="top" style="width:71.6pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">mAP0.5-0.9</span></p>
+  </td>
+  <td width="95" valign="top" style="width:71.6pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">F1</span></p>
+  </td>
+  <td width="95" valign="top" style="width:71.6pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">Weight</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="94" rowspan="4" style="width:70.25pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">Yolov5</span></p>
+  </td>
+  <td width="65" valign="top" style="width:48.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span style="font-family:&quot;Yu Gothic&quot;,sans-serif">╳</span></p>
+  </td>
+  <td width="65" valign="top" style="width:48.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span style="font-family:&quot;Yu Gothic&quot;,sans-serif">╳</span></p>
+  </td>
+  <td width="65" valign="top" style="width:48.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">81.3</span></p>
+  </td>
+  <td width="84" valign="top" style="width:62.8pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">78.0</span></p>
+  </td>
+  <td width="67" valign="top" style="width:50.1pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">81.9</span></p>
+  </td>
+  <td width="95" valign="top" style="width:71.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">64.1</span></p>
+  </td>
+  <td width="95" valign="top" style="width:71.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">79.6
+  </span></p>
+  </td>
+  <td width="95" valign="top" style="width:71.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="65" valign="top" style="width:48.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span style="font-family:&quot;Yu Gothic&quot;,sans-serif">✓</span></p>
+  </td>
+  <td width="65" valign="top" style="width:48.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span style="font-family:&quot;Yu Gothic&quot;,sans-serif">╳</span></p>
+  </td>
+  <td width="65" valign="top" style="width:48.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">82.0</span></p>
+  </td>
+  <td width="84" valign="top" style="width:62.8pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">78.2</span></p>
+  </td>
+  <td width="67" valign="top" style="width:50.1pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">83.0</span></p>
+  </td>
+  <td width="95" valign="top" style="width:71.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">64.6</span></p>
+  </td>
+  <td width="95" valign="top" style="width:71.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">80.1</span></p>
+  </td>
+  <td width="95" valign="top" style="width:71.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="65" valign="top" style="width:48.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span style="font-family:&quot;Yu Gothic&quot;,sans-serif">╳</span></p>
+  </td>
+  <td width="65" valign="top" style="width:48.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span style="font-family:&quot;Yu Gothic&quot;,sans-serif">✓</span></p>
+  </td>
+  <td width="65" valign="top" style="width:48.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">83.4
+  </span></p>
+  </td>
+  <td width="84" valign="top" style="width:62.8pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">77.9</span></p>
+  </td>
+  <td width="67" valign="top" style="width:50.1pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">83.1</span></p>
+  </td>
+  <td width="95" valign="top" style="width:71.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">66.9</span></p>
+  </td>
+  <td width="95" valign="top" style="width:71.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">80.6</span></p>
+  </td>
+  <td width="95" valign="top" style="width:71.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr style="height:2.25pt">
+  <td width="65" valign="top" style="width:48.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:2.25pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span style="font-family:&quot;Yu Gothic&quot;,sans-serif">✓</span></p>
+  </td>
+  <td width="65" valign="top" style="width:48.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:2.25pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span style="font-family:&quot;Yu Gothic&quot;,sans-serif">✓</span></p>
+  </td>
+  <td width="65" valign="top" style="width:48.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:2.25pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">85.3</span></p>
+  </td>
+  <td width="84" valign="top" style="width:62.8pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:2.25pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">78.1</span></p>
+  </td>
+  <td width="67" valign="top" style="width:50.1pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:2.25pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><b><span lang="EN-US">84.9</span></b></p>
+  </td>
+  <td width="95" valign="top" style="width:71.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:2.25pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><b><span lang="EN-US">67.4</span></b></p>
+  </td>
+  <td width="95" valign="top" style="width:71.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:2.25pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><b><span lang="EN-US">81.5</span></b></p>
+  </td>
+  <td width="95" valign="top" style="width:71.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:2.25pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="94" rowspan="4" style="width:70.25pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">Yolov7</span></p>
+  </td>
+  <td width="65" valign="top" style="width:48.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span style="font-family:&quot;Yu Gothic&quot;,sans-serif">╳</span></p>
+  </td>
+  <td width="65" valign="top" style="width:48.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span style="font-family:&quot;Yu Gothic&quot;,sans-serif">╳</span></p>
+  </td>
+  <td width="65" valign="top" style="width:48.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">87.4
+  </span></p>
+  </td>
+  <td width="84" valign="top" style="width:62.8pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">84.0
+  </span></p>
+  </td>
+  <td width="67" valign="top" style="width:50.1pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">88.9
+  </span></p>
+  </td>
+  <td width="95" valign="top" style="width:71.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">73.7
+  </span></p>
+  </td>
+  <td width="95" valign="top" style="width:71.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">85.7
+  </span></p>
+  </td>
+  <td width="95" valign="top" style="width:71.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="65" valign="top" style="width:48.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span style="font-family:&quot;Yu Gothic&quot;,sans-serif">✓</span></p>
+  </td>
+  <td width="65" valign="top" style="width:48.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span style="font-family:&quot;Yu Gothic&quot;,sans-serif">╳</span></p>
+  </td>
+  <td width="65" valign="top" style="width:48.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">91.0
+  </span></p>
+  </td>
+  <td width="84" valign="top" style="width:62.8pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">83.2
+  </span></p>
+  </td>
+  <td width="67" valign="top" style="width:50.1pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">89.9
+  </span></p>
+  </td>
+  <td width="95" valign="top" style="width:71.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">74.9
+  </span></p>
+  </td>
+  <td width="95" valign="top" style="width:71.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">86.9
+  </span></p>
+  </td>
+  <td width="95" valign="top" style="width:71.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="65" valign="top" style="width:48.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span style="font-family:&quot;Yu Gothic&quot;,sans-serif">╳</span></p>
+  </td>
+  <td width="65" valign="top" style="width:48.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span style="font-family:&quot;Yu Gothic&quot;,sans-serif">✓</span></p>
+  </td>
+  <td width="65" valign="top" style="width:48.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">89.8
+  </span></p>
+  </td>
+  <td width="84" valign="top" style="width:62.8pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">86.0
+  </span></p>
+  </td>
+  <td width="67" valign="top" style="width:50.1pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">90.8</span></p>
+  </td>
+  <td width="95" valign="top" style="width:71.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><b><span lang="EN-US">76.8 </span></b></p>
+  </td>
+  <td width="95" valign="top" style="width:71.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">87.9
+  </span></p>
+  </td>
+  <td width="95" valign="top" style="width:71.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="65" valign="top" style="width:48.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span style="font-family:&quot;Yu Gothic&quot;,sans-serif">✓</span></p>
+  </td>
+  <td width="65" valign="top" style="width:48.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span style="font-family:&quot;Yu Gothic&quot;,sans-serif">✓</span></p>
+  </td>
+  <td width="65" valign="top" style="width:48.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">92.3
+  </span></p>
+  </td>
+  <td width="84" valign="top" style="width:62.8pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">85.5
+  </span></p>
+  </td>
+  <td width="67" valign="top" style="width:50.1pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><b><span lang="EN-US">91.1</span></b></p>
+  </td>
+  <td width="95" valign="top" style="width:71.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">76.4
+  </span></p>
+  </td>
+  <td width="95" valign="top" style="width:71.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><b><span lang="EN-US">88.8 </span></b></p>
+  </td>
+  <td width="95" valign="top" style="width:71.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="94" rowspan="4" style="width:70.25pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">Yolov8</span></p>
+  </td>
+  <td width="65" valign="top" style="width:48.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span style="font-family:&quot;Yu Gothic&quot;,sans-serif">╳</span></p>
+  </td>
+  <td width="65" valign="top" style="width:48.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span style="font-family:&quot;Yu Gothic&quot;,sans-serif">╳</span></p>
+  </td>
+  <td width="65" valign="top" style="width:48.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">87.4</span></p>
+  </td>
+  <td width="84" valign="top" style="width:62.8pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">74.2</span></p>
+  </td>
+  <td width="67" valign="top" style="width:50.1pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">82.8</span></p>
+  </td>
+  <td width="95" valign="top" style="width:71.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">73.3</span></p>
+  </td>
+  <td width="95" valign="top" style="width:71.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">80.3
+  </span></p>
+  </td>
+  <td width="95" valign="top" style="width:71.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="65" valign="top" style="width:48.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span style="font-family:&quot;Yu Gothic&quot;,sans-serif">✓</span></p>
+  </td>
+  <td width="65" valign="top" style="width:48.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span style="font-family:&quot;Yu Gothic&quot;,sans-serif">╳</span></p>
+  </td>
+  <td width="65" valign="top" style="width:48.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">88.0</span></p>
+  </td>
+  <td width="84" valign="top" style="width:62.8pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">74.6</span></p>
+  </td>
+  <td width="67" valign="top" style="width:50.1pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">83.1</span></p>
+  </td>
+  <td width="95" valign="top" style="width:71.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">73.8</span></p>
+  </td>
+  <td width="95" valign="top" style="width:71.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">80.7</span></p>
+  </td>
+  <td width="95" valign="top" style="width:71.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="65" valign="top" style="width:48.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span style="font-family:&quot;Yu Gothic&quot;,sans-serif">╳</span></p>
+  </td>
+  <td width="65" valign="top" style="width:48.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span style="font-family:&quot;Yu Gothic&quot;,sans-serif">✓</span></p>
+  </td>
+  <td width="65" valign="top" style="width:48.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">89.4</span></p>
+  </td>
+  <td width="84" valign="top" style="width:62.8pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">73.4</span></p>
+  </td>
+  <td width="67" valign="top" style="width:50.1pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">83.1</span></p>
+  </td>
+  <td width="95" valign="top" style="width:71.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">74.2</span></p>
+  </td>
+  <td width="95" valign="top" style="width:71.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">80.6</span></p>
+  </td>
+  <td width="95" valign="top" style="width:71.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="65" valign="top" style="width:48.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span style="font-family:&quot;Yu Gothic&quot;,sans-serif">✓</span></p>
+  </td>
+  <td width="65" valign="top" style="width:48.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span style="font-family:&quot;Yu Gothic&quot;,sans-serif">✓</span></p>
+  </td>
+  <td width="65" valign="top" style="width:48.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">88.5</span></p>
+  </td>
+  <td width="84" valign="top" style="width:62.8pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">74.1</span></p>
+  </td>
+  <td width="67" valign="top" style="width:50.1pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><b><span lang="EN-US">83.4</span></b></p>
+  </td>
+  <td width="95" valign="top" style="width:71.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><b><span lang="EN-US">74.4</span></b></p>
+  </td>
+  <td width="95" valign="top" style="width:71.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><b><span lang="EN-US">80.7</span></b></p>
+  </td>
+  <td width="95" valign="top" style="width:71.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">&nbsp;</span></p>
+  </td>
+ </tr>
+</tbody></table>
+
+</div>
+
+<p class="MsoNormal"><span lang="EN-US">&nbsp;</span></p>
+
+</div>
+
 ## Install
 please refer to [YOLOv5](https://github.com/ultralytics/yolov5),[YOLOv7](https://github.com/WongKinYiu/yolov7) and [YOLOv8](https://github.com/ultralytics/ultralytics) for installation.

@@ -10,12 +10,13 @@ The dataset can be download from [Google Drive](https://drive.google.com/file/d/
 
 · All images and their associated annotations in CORS-ADD can be used for academic purposes only, but any commercial use is prohibited.
 ## Results
+
 <div class="WordSection1" style="layout-grid:15.6pt">
 
 <div align="center">
 
-<table class="MsoTableGrid" border="1" cellspacing="0" cellpadding="0" style="border-collapse:collapse;border:none">
- <tbody><tr>
+<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse;mso-yfti-tbllook:1184;mso-padding-alt:0cm 0cm 0cm 0cm">
+ <tbody><tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes">
   <td width="94" style="width:70.25pt;border:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt">
   <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">&nbsp;</span></p>
   </td>
@@ -37,7 +38,7 @@ The dataset can be download from [Google Drive](https://drive.google.com/file/d/
   </td>
   <td width="67" style="width:50.1pt;border:solid windowtext 1.0pt;border-left:
   none;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">mAP(%)</span></p>
+  <p class="MsoNormal" align="center" style="text-align:center"><span class="SpellE"><span lang="EN-US">mAP</span></span><span lang="EN-US">(%)</span></p>
   </td>
   <td width="95" valign="top" style="width:71.6pt;border:solid windowtext 1.0pt;
   border-left:none;padding:0cm 5.4pt 0cm 5.4pt">
@@ -48,11 +49,9 @@ The dataset can be download from [Google Drive](https://drive.google.com/file/d/
   <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">F1</span></p>
   </td>
   <td width="95" valign="top" style="width:71.6pt;border:solid windowtext 1.0pt;
-  border-left:none;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">Weight</span></p>
-  </td>
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt"></td>
  </tr>
- <tr>
+ <tr style="mso-yfti-irow:1">
   <td width="94" rowspan="4" style="width:70.25pt;border:solid windowtext 1.0pt;
   border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
   <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">Yolov5</span></p>
@@ -95,11 +94,9 @@ The dataset can be download from [Google Drive](https://drive.google.com/file/d/
   </td>
   <td width="95" valign="top" style="width:71.6pt;border-top:none;border-left:none;
   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">&nbsp;</span></p>
-  </td>
+  padding:0cm 5.4pt 0cm 5.4pt"></td>
  </tr>
- <tr>
+ <tr style="mso-yfti-irow:2">
   <td width="65" valign="top" style="width:48.9pt;border-top:none;border-left:none;
   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0cm 5.4pt 0cm 5.4pt">
@@ -138,10 +135,10 @@ The dataset can be download from [Google Drive](https://drive.google.com/file/d/
   <td width="95" valign="top" style="width:71.6pt;border-top:none;border-left:none;
   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">&nbsp;</span></p>
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">Weight</span></p>
   </td>
  </tr>
- <tr>
+ <tr style="mso-yfti-irow:3">
   <td width="65" valign="top" style="width:48.9pt;border-top:none;border-left:none;
   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0cm 5.4pt 0cm 5.4pt">
@@ -181,10 +178,10 @@ The dataset can be download from [Google Drive](https://drive.google.com/file/d/
   <td width="95" valign="top" style="width:71.6pt;border-top:none;border-left:none;
   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">&nbsp;</span></p>
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">Weight</span></p>
   </td>
  </tr>
- <tr style="height:2.25pt">
+ <tr style="mso-yfti-irow:4;height:2.25pt">
   <td width="65" valign="top" style="width:48.9pt;border-top:none;border-left:none;
   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0cm 5.4pt 0cm 5.4pt;height:2.25pt">
@@ -223,10 +220,10 @@ The dataset can be download from [Google Drive](https://drive.google.com/file/d/
   <td width="95" valign="top" style="width:71.6pt;border-top:none;border-left:none;
   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0cm 5.4pt 0cm 5.4pt;height:2.25pt">
-  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">&nbsp;</span></p>
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">Weight</span></p>
   </td>
  </tr>
- <tr>
+ <tr style="mso-yfti-irow:5">
   <td width="94" rowspan="4" style="width:70.25pt;border:solid windowtext 1.0pt;
   border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
   <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">Yolov7</span></p>
@@ -273,11 +270,9 @@ The dataset can be download from [Google Drive](https://drive.google.com/file/d/
   </td>
   <td width="95" valign="top" style="width:71.6pt;border-top:none;border-left:none;
   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">&nbsp;</span></p>
-  </td>
+  padding:0cm 5.4pt 0cm 5.4pt"></td>
  </tr>
- <tr>
+ <tr style="mso-yfti-irow:6">
   <td width="65" valign="top" style="width:48.9pt;border-top:none;border-left:none;
   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0cm 5.4pt 0cm 5.4pt">
@@ -321,10 +316,10 @@ The dataset can be download from [Google Drive](https://drive.google.com/file/d/
   <td width="95" valign="top" style="width:71.6pt;border-top:none;border-left:none;
   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">&nbsp;</span></p>
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">Weight</span></p>
   </td>
  </tr>
- <tr>
+ <tr style="mso-yfti-irow:7">
   <td width="65" valign="top" style="width:48.9pt;border-top:none;border-left:none;
   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0cm 5.4pt 0cm 5.4pt">
@@ -366,10 +361,10 @@ The dataset can be download from [Google Drive](https://drive.google.com/file/d/
   <td width="95" valign="top" style="width:71.6pt;border-top:none;border-left:none;
   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">&nbsp;</span></p>
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">Weight</span></p>
   </td>
  </tr>
- <tr>
+ <tr style="mso-yfti-irow:8">
   <td width="65" valign="top" style="width:48.9pt;border-top:none;border-left:none;
   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0cm 5.4pt 0cm 5.4pt">
@@ -411,10 +406,10 @@ The dataset can be download from [Google Drive](https://drive.google.com/file/d/
   <td width="95" valign="top" style="width:71.6pt;border-top:none;border-left:none;
   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">&nbsp;</span></p>
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">Weight</span></p>
   </td>
  </tr>
- <tr>
+ <tr style="mso-yfti-irow:9">
   <td width="94" rowspan="4" style="width:70.25pt;border:solid windowtext 1.0pt;
   border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
   <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">Yolov8</span></p>
@@ -457,11 +452,9 @@ The dataset can be download from [Google Drive](https://drive.google.com/file/d/
   </td>
   <td width="95" valign="top" style="width:71.6pt;border-top:none;border-left:none;
   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">&nbsp;</span></p>
-  </td>
+  padding:0cm 5.4pt 0cm 5.4pt"></td>
  </tr>
- <tr>
+ <tr style="mso-yfti-irow:10">
   <td width="65" valign="top" style="width:48.9pt;border-top:none;border-left:none;
   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0cm 5.4pt 0cm 5.4pt">
@@ -500,10 +493,10 @@ The dataset can be download from [Google Drive](https://drive.google.com/file/d/
   <td width="95" valign="top" style="width:71.6pt;border-top:none;border-left:none;
   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">&nbsp;</span></p>
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">Weight</span></p>
   </td>
  </tr>
- <tr>
+ <tr style="mso-yfti-irow:11">
   <td width="65" valign="top" style="width:48.9pt;border-top:none;border-left:none;
   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0cm 5.4pt 0cm 5.4pt">
@@ -542,10 +535,10 @@ The dataset can be download from [Google Drive](https://drive.google.com/file/d/
   <td width="95" valign="top" style="width:71.6pt;border-top:none;border-left:none;
   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">&nbsp;</span></p>
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">Weight</span></p>
   </td>
  </tr>
- <tr>
+ <tr style="mso-yfti-irow:12;mso-yfti-lastrow:yes">
   <td width="65" valign="top" style="width:48.9pt;border-top:none;border-left:none;
   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0cm 5.4pt 0cm 5.4pt">
@@ -584,7 +577,7 @@ The dataset can be download from [Google Drive](https://drive.google.com/file/d/
   <td width="95" valign="top" style="width:71.6pt;border-top:none;border-left:none;
   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">&nbsp;</span></p>
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">Weight</span></p>
   </td>
  </tr>
 </tbody></table>

@@ -10,7 +10,7 @@ The constructed dataset contains a wide variety of aircraft images from diverse 
 
 ![dataset](https://github.com/YangBo0411/aircraft-detection/blob/main/dataset.png)
 
-· All images and their associated annotations in CORS-ADD can be used for academic purposes only, but any commercial use is prohibited.
+· All images in dataset can be used for academic purposes only, but any commercial use is prohibited.
 ## Results
 
 <div class="WordSection1" style="layout-grid:15.6pt">

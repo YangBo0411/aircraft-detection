@@ -2082,12 +2082,38 @@ class ST2CSPC(nn.Module):
         y2 = self.cv2(x)
         return self.cv4(torch.cat((y1, y2), dim=1))
 
-##### end of swin transformer v2 #####
-#------------------EVCblock---------------------
+
+#------------------DVCblock---------------------
 import torch.nn.functional as F
 from functools import partial
 from timm.models.layers import DropPath, trunc_normal_
 # LVC
+class LSKblock(nn.Module):
+    def __init__(self, dim):
+        super().__init__()
+        self.norm1 = nn.BatchNorm2d(dim)
+        self.conv0 = nn.Conv2d(dim, dim, 5, padding=2, groups=dim)
+        self.conv_spatial = nn.Conv2d(dim, dim, 7, stride=1, padding=9, groups=dim, dilation=3)
+        self.conv1 = nn.Conv2d(dim, dim // 2, 1)
+        self.conv2 = nn.Conv2d(dim, dim // 2, 1)
+        self.conv_squeeze = nn.Conv2d(2, 2, 7, padding=3)
+        self.conv = nn.Conv2d(dim // 2, dim, 1)
+
+    def forward(self, x):
+        attn1 = self.conv0(x)
+        attn2 = self.conv_spatial(attn1)
+
+        attn1 = self.conv1(attn1)
+        attn2 = self.conv2(attn2)
+
+        attn = torch.cat([attn1, attn2], dim=1)
+        avg_attn = torch.mean(attn, dim=1, keepdim=True)
+        max_attn, _ = torch.max(attn, dim=1, keepdim=True)
+        agg = torch.cat([avg_attn, max_attn], dim=1)
+        sig = self.conv_squeeze(agg).sigmoid()
+        attn = attn1 * sig[:, 0, :, :].unsqueeze(1) + attn2 * sig[:, 1, :, :].unsqueeze(1)
+        attn = self.conv(attn)
+        return self.norm1(x * attn)
 class Encoding(nn.Module):
     def __init__(self, in_channels, num_codes):
         super(Encoding, self).__init__()
@@ -2104,21 +2130,14 @@ class Encoding(nn.Module):
     @staticmethod
     def scaled_l2(x, codewords, scale):
         #x = [batch_size, height x width, channels]
-        num_codes, in_channels = codewords.size()   #获得码书数量和输入数据的通道数
-        b = x.size(0)                   #获取输入数据的批次大小
+        num_codes, in_channels = codewords.size()
+        b = x.size(0)
         expanded_x = x.unsqueeze(2).expand((b, x.size(1), num_codes, in_channels))
-        #将形状从 [batch_size, height x width， channels] 变成 [batch_size, height x width , num_codes, channels]
-        # 使用 expand 函数将张量重复 num_codes 次，并将其形状从
 
-
-        # ---处理codebook (num_code, c1)
         reshaped_codewords = codewords.view((1, 1, num_codes, in_channels))
-        #变成 [batch_size, height x width , num_codes, channels]
 
         reshaped_scale = scale.view((1, 1, num_codes))  # N, num_codes
-        #对平滑因子进行形状变换，将其从 [num_codes] 的形状转换为 [1, 1, num_codes] 的形状
 
-        # ---计算rik = z1 - d  # b, N, num_codes
         scaled_l2_norm = reshaped_scale * (expanded_x - reshaped_codewords).pow(2).sum(dim=3)
         return scaled_l2_norm
 
@@ -2126,17 +2145,13 @@ class Encoding(nn.Module):
     def aggregate(assignment_weights, x, codewords):
         num_codes, in_channels = codewords.size()
 
-        # ---处理codebook
         reshaped_codewords = codewords.view((1, 1, num_codes, in_channels))
         b = x.size(0)
 
-        # ---处理特征向量x b, c1, N
         expanded_x = x.unsqueeze(2).expand((b, x.size(1), num_codes, in_channels))
 
-        #变换rei  b, N, num_codes,-
         assignment_weights = assignment_weights.unsqueeze(3)  # b, N, num_codes,
 
-        # ---开始计算eik,必须在Rei计算完之后
         encoded_feat = (assignment_weights * (expanded_x - reshaped_codewords)).sum(1)
         return encoded_feat
 
@@ -2326,8 +2341,7 @@ class LightMLPBlock(nn.Module):
             x = x + self.drop_path(self.mlp(self.norm2(x)))
         return x
 
-from models.LSKNet import LSKblock
-# EVCBlock
+# DVCBlock
 class DVCBlock(nn.Module):
     def __init__(self, in_channels, out_channels, channel_ratio=4, base_channel=16):
         super().__init__()
@@ -2343,7 +2357,7 @@ class DVCBlock(nn.Module):
         self.l_MLP = LightMLPBlock(in_channels, out_channels, ksize=1, stride=1, act="silu", act_layer=nn.GELU, mlp_ratio=4., drop=0.,
                                      use_layer_scale=True, layer_scale_init_value=1e-5, drop_path=0., norm_layer=GroupNorm)
         self.cnv1 = nn.Conv2d(ch, out_channels, kernel_size=1, stride=1, padding=0)
-        self.att = LSKblock(dim=256)        #
+        self.att = LSKblock(dim=256)
     def forward(self, x):
         x1 = self.maxpool((self.conv1(x)))
         # LVCBlock
@@ -2353,5 +2367,4 @@ class DVCBlock(nn.Module):
         # concat
         x = torch.cat((x_lvc, x_lmlp), dim=1)
         x = self.cnv1(x)
-        return self.att(x)          #
-        # return x                    #源码
+        return self.att(x)

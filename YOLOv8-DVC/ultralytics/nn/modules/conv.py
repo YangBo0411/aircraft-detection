@@ -338,7 +338,7 @@ class Encoding(nn.Module):
         super(Encoding, self).__init__()
         # init codewords and smoothing factor
         self.in_channels, self.num_codes = in_channels, num_codes
-        num_codes = 48
+        num_codes = 32
         std = 1. / ((num_codes * in_channels)**0.5)
         # [num_codes, channels]
         self.codewords = nn.Parameter(
@@ -482,7 +482,7 @@ class LVCBlock(nn.Module):
         super(LVCBlock, self).__init__()
         self.out_channels = out_channels
         self.num_codes = num_codes
-        num_codes = 48
+        num_codes = 32
 
         self.conv_1 = ConvBlock(in_channels=in_channels, out_channels=in_channels, res_conv=True, stride=1)
 
@@ -577,7 +577,7 @@ class DVCBlock(nn.Module):
         self.maxpool = nn.MaxPool2d(kernel_size=3, stride=1, padding=1)  # 1 / 4 [56, 56]
 
         # LVC
-        self.lvc = LVCBlock(in_channels=in_channels, out_channels=out_channels, num_codes=48)  # c1值暂时未定
+        self.lvc = LVCBlock(in_channels=in_channels, out_channels=out_channels, num_codes = 32)  # c1值暂时未定
         # LightMLPBlock
         self.l_MLP = LightMLPBlock(in_channels, out_channels, ksize=1, stride=1, act="silu", act_layer=nn.GELU, mlp_ratio=4., drop=0.,
                                      use_layer_scale=True, layer_scale_init_value=1e-5, drop_path=0., norm_layer=GroupNorm)

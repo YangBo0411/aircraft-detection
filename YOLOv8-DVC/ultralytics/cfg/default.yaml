@@ -3,10 +3,10 @@
 
 
 task: detect  # (str) YOLO task, i.e. detect, segment, classify, pose
-mode: train  # (str) YOLO mode, i.e. train, val, predict, export, track, benchmark
+mode: val  # (str) YOLO mode, i.e. train, val, predict, export, track, benchmark
 
 # Train settings -------------------------------------------------------------------------------------------------------
-model: ultralytics/cfg/models/v8/yolov8-DVC.yaml # (str, optional) path to model file, i.e. yolov8n.pt, yolov8n.yaml
+model: run/best.pt # (str, optional) path to model file, i.e. yolov8n.pt, yolov8n.yaml
 data: aircraft dataset all.yaml # (str, optional) path to data file, i.e. coco128.yaml
 epochs: 250  # (int) number of epochs to train for
 patience: 50  # (int) epochs to wait for no observable improvement for early stopping of training

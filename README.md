@@ -226,7 +226,7 @@ The constructed dataset contains a wide variety of aircraft images from diverse 
   <td width="95" valign="top" style="width:71.6pt;border-top:none;border-left:none;
   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0cm 5.4pt 0cm 5.4pt;height:2.25pt">
-  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US"><a href="https://github.com/yang19950411/infrared-small-target/raw/main/runs/train/NUDT.pt">weight</span></p>
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US"><a href="https://github.com/YangBo0411/aircraft-detection/raw/main/YOLOv5-DVC/runs/best.pt">weight</span></p>
   </td>
  </tr>
  <tr style="mso-yfti-irow:5">
@@ -414,7 +414,7 @@ The constructed dataset contains a wide variety of aircraft images from diverse 
   <td width="95" valign="top" style="width:71.6pt;border-top:none;border-left:none;
   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">Weight&nbsp;</span></p>
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US"><a href="https://github.com/YangBo0411/aircraft-detection/raw/main/YOLOv8-DVC/run/best.pt">weight</span></p>
   </td>
  </tr>
  <tr style="mso-yfti-irow:9">

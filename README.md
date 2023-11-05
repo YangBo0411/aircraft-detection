@@ -4,13 +4,13 @@ Aircraft detection is a critical task in remote sensing imagery. Deep learning-b
 
 ## The overall architecture
 
-![image]()
+![image](https://github.com/YangBo0411/aircraft-detection/blob/main/detection%20process.png)
 ## Dataset
-The constructed dataset contains a wide variety of aircraft images from diverse perspectives, scenes, attitudes, weather conditions, and sizes. Specifically, Fig. 8(a)(d) present aircraft images from multi-perspectives, including upward view, downward view, eye-level view, and strabismus view. To demonstrate more diverse scenarios, Fig. 8(e)-(h) portray instances such as occlusion, aircraft carrier deck, sea surface, and snow mountain. Additionally, Fig. 8(i)-(l) illustrate various flight attitudes of the aircraft, including stationary, maneuvering, takeoff, and landing. Different weather conditions such as early morning, dusk, night, and fog are shown in Fig. 8(m)-(p). Furthermore, the dataset encompasses targets of large, medium, and small scales, ensuring the inclusion of diverse target scales (as shown in Fig. 8(q)-(t)). This comprehensive representation of complex scenarios, coupled with the diverse properties of objects, poses challenges for accurately identifying aircraft, helping to train detector that exhibit stronger robustness.
+The constructed dataset contains a wide variety of aircraft images from diverse perspectives, scenes, attitudes, weather conditions, and sizes. Specifically, Fig. 8(a)(d) present aircraft images from multi-perspectives, including upward view, downward view, eye-level view, and strabismus view. To demonstrate more diverse scenarios, Fig. 8(e)-(h) portray instances such as occlusion, aircraft carrier deck, sea surface, and snow mountain. Additionally, Fig. 8(i)-(l) illustrate various flight attitudes of the aircraft, including stationary, maneuvering, takeoff, and landing. Different weather conditions such as early morning, dusk, night, and fog are shown in Fig. 8(m)-(p). Furthermore, the dataset encompasses targets of large, medium, and small scales, ensuring the inclusion of diverse target scales (as shown in Fig. 8(q)-(t)). This comprehensive representation of complex scenarios, coupled with the diverse properties of objects, poses challenges for accurately identifying aircraft, helping to train detector that exhibit stronger robustness. The dataset can be download from [Google Drive](https://drive.google.com/file/d/1goc6D3647xrcDChOvaCycG2op4nfMZpp/view?usp=sharing).
 
-The dataset can be download from [Google Drive](https://drive.google.com/file/d/1goc6D3647xrcDChOvaCycG2op4nfMZpp/view?usp=sharing).
+![dataset](https://github.com/YangBo0411/aircraft-detection/blob/main/dataset.png)
 
-· All images and their associated annotations in CORS-ADD can be used for academic purposes only, but any commercial use is prohibited.
+· All images in dataset can be used for academic purposes only, but any commercial use is prohibited.
 ## Results
 
 <div class="WordSection1" style="layout-grid:15.6pt">
